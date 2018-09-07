@@ -9,3 +9,11 @@ ajax-weibo
 3.使用了ajax技术进行前后端交互。<br>
 
 ## 展示
+![demo](https://github.com/CHIKITCHONG/weibo/blob/master/demo.gif)
+
+## 运行
+在项目的根目录下，运行app.py
+```
+python app.py
+```
+然后访问localhost:3000
