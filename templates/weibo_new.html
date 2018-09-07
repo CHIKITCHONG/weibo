@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>weibo ajax</title>
+        <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/semantic.css">
+        <link rel="stylesheet" href="/static/pure-min.css">
+        <link rel="stylesheet" href="/static/weibo.css">
+        <style>
+        .comment {
+            border: 1px red solid;
+        }
+        .center {
+        text-align: center;
+        }
+        body {background-image:url(/static/tupian.jpg);}
+        </style>
+    </head>
+    <body>
+
+
+        <div class="center pure-form">
+            <br>
+            <br>
+            <h1>WEIBO</h1>
+            <input class="pure-input-1-5 pure-input-rounded" type="text" placeholder="Add Weibo" id='id-input-weibo'>
+            <button type="button" class="center btn btn-primary" id='id-button-add'>发表微博</button>
+            <a class="btn btn-primary" href="/">回到首页</a>
+        </div>
+        <div class="ui text container segment weibo-table" id="id-weibo-list">
+
+        </div>
+
+        <script src='/static?file=main.js'></script>
+        <script src='/static?file=weibo.js'></script>
+    </body>
+</html>

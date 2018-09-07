@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+    <style type="text/css">
+    .center {
+        margin: 0 auto;
+        margin-left: 20cm;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1>登录</h1>
+        <h2>你好 {{username}}</h2>
+
+        <form class="pure-form pure-form-stacked" action="/user/login" method="post">
+
+            <input id="username" type="text" name="username" placeholder="请输入用户名">
+            <br>
+            <input type="text" name="password" placeholder="请输入密码">
+            <br>
+            <button class="pure-button pure-button-primary" type="submit">登录</button>
+            &nbsp&nbsp
+            <a class="pure-button pure-button-primary" href="/" type="submit">首页</a>
+        </form>
+        <h3>{{result}}</h3>
+    </div>
+    <link rel="stylesheet" href="/static/pure-min.css">
+</body>
+</html>

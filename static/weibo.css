@@ -1,0 +1,44 @@
+.weibo-table {
+        margin: 10 auto;
+        margin-left: 30cm;
+        box-shadow: 10px 10px 5px #333333;
+            }
+.center {
+        text-align: center;
+}
+.comment {
+    border: 1px red solid;
+}
+
+.weibo-comments {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #aa6708;
+    border-left-width: 5px;
+    border-radius: 3px;
+        }
+
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout-warning {
+    border-left-color: #aa6708;
+}
+
+.bs-callout-warning h4 {
+    color: #aa6708;
+}
+
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.h4, h4 {
+    font-size: 18px;
+}
+
