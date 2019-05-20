@@ -14,7 +14,6 @@ def save(data, path):
     data 是 dict 或者 list
     path 是保存文件的路径
     """
-    # json 是一个序列化/反序列化(上课会讲这两个名词) list/dict 的库
     # indent 是缩进
     # ensure_ascii=False 用于保存中文
     s = json.dumps(data, indent=2, ensure_ascii=False, cls=GuaEncoder)
@@ -88,7 +87,6 @@ class Model(object):
                 del ms[i]
 
         # ms = [m for m in cls.all() if m.id != id]
-
         # 保存
         # __dict__ 是包含了对象所有属性和值的字典
         l = [m.__dict__ for m in ms]
@@ -173,7 +171,6 @@ class Model(object):
         __repr__ 是一个魔法方法
         简单来说, 它的作用是得到类的 字符串表达 形式
         比如 print(u) 实际上是 print(u.__repr__())
-        不明白就看书或者 搜
         """
         classname = self.__class__.__name__
         properties = ['{}: ({})'.format(k, v) for k, v in self.__dict__.items()]
