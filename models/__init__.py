@@ -16,7 +16,7 @@ def save(data, path):
     """
     # indent 是缩进
     # ensure_ascii=False 用于保存中文
-    s = json.dumps(data, indent=2, ensure_ascii=False, cls=GuaEncoder)
+    s = json.dumps(data, indent=2, ensure_ascii=False, cls=Encoder)
     with open(path, 'w+', encoding='utf-8') as f:
         log('save', path, s, data)
         f.write(s)
@@ -30,7 +30,7 @@ def load(path):
     with open(path, 'r', encoding='utf-8') as f:
         s = f.read()
         log('load', s)
-        return json.loads(s, object_hook=gua_decode)
+        return json.loads(s, object_hook=g_decode)
 
 
 class Model(object):
@@ -189,3 +189,6 @@ class Model(object):
         # 要转换为 dict 格式才行
         js = [t.json() for t in ms]
         return js
+
+
+if __name__ == '__main__':
