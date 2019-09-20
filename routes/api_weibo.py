@@ -41,7 +41,6 @@ def comment_add():
     form = request.get_json()
     # 创建一个 weibo
     u = current_user()
-    log('*************添加的评论*************************', form)
     t = Comment.add(form, u.id)
     # 把创建好的 weibo 返回给浏览器
     return jsonify(t.json())

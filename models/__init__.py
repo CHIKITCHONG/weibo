@@ -103,7 +103,6 @@ class Model(object):
         log('models in all', models)
         # 这里用了列表推导生成一个包含所有 实例 的 list
         # m 是 dict, 用 cls.new(m) 可以初始化一个 cls 的实例
-        # 不明白就 log 大法看看这些都是啥
         ms = [cls(m) for m in models]
         return ms
 
