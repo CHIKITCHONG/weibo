@@ -10,7 +10,7 @@ class UserRole(Enum):
     normal = auto()
 
 
-class GuaEncoder(json.JSONEncoder):
+class Encoder(json.JSONEncoder):
     prefix = "__enum__"
 
     def default(self, o):
@@ -20,9 +20,9 @@ class GuaEncoder(json.JSONEncoder):
             return super().default(o)
 
 
-def gua_decode(d):
-    if GuaEncoder.prefix in d:
-        name = d[GuaEncoder.prefix]
+def g_decode(d):
+    if Encoder.prefix in d:
+        name = d[Encoder.prefix]
         return UserRole[name]
     else:
         return d

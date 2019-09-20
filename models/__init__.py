@@ -1,8 +1,8 @@
 import json
 
 from models.user_role import (
-    GuaEncoder,
-    gua_decode,
+    Encoder,
+    g_decode,
 )
 
 from utils import log
